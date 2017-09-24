@@ -292,7 +292,7 @@ In the following, only the registers for bank 0 will be shown.
 
 ## Pinout
 
-The BCM7405 is packaged as a 976 pin, 1 mm, 34 * 34 ball grid array (BGA). See [[BCM7405/Pinout]] for a complete pinout.
+The BCM7405 is packaged as a 976 pin, 1 mm, 34 * 34 ball grid array (BGA). See [BCM7405/Pinout] for a complete pinout.
 
 ## Devices containing BCM7405 microprocessors
 
@@ -305,7 +305,7 @@ The BCM7405 is packaged as a 976 pin, 1 mm, 34 * 34 ball grid array (BGA). See [
 
 * http://www.broadcom.com/products/IPTV/IPTV-Solutions/BCM7405
 * http://www.broadcom.com/products/Cable/Cable-Set-Top-Box-Solutions/BCM7405
-* [http://www.datasheets.org.uk/indexdl/Datasheet-025/DSA00437494.pdf Product brief]
-* '''bcm97405mbv00_p10.pdf''' / '''bcm97405mbv00_p10.rar''' Circuit diagram / pinout
+* [Product brief](http://www.datasheets.org.uk/indexdl/Datasheet-025/DSA00437494.pdf)
+* **bcm97405mbv00\_p10.pdf** / **bcm97405mbv00\_p10.rar** Circuit diagram / pinout
 
-[[Category:Broadcom]]
+[BCM7405/Pinout]: pinout.html
