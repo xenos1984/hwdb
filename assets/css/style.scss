@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+table.pingraph td, table.pingraph th {text-align:center; border:1px solid black;}
+table.pingraph {border-collapse: separate;}
+table.pinlist td, table.pinlist th {border:1px solid black;}
+table.pinlist {border-collapse: collapse;}
+td.gnd {background-color:#cccccc;}
+td.power {background-color:#ffaaff;}
+td.in {background-color:#ffffaa;}
+td.out {background-color:#aaffff;}
+td.inout {background-color:#aaffaa;}
+td.rsvd {background-color:#ffffff;}
+
