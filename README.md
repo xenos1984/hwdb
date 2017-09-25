@@ -1,5 +1,9 @@
 # Programmers' Hardware Database
 
+## Content
+
+* [Processors](proc)
+
 ## Motivation
 
 Nowadays many electronic devices, including consumer electronics and scientific hardware, are in fact embedded computing devices. It is often possible to put new software onto these devices, provided either by the hardware vendors or by creative hobby programmers, in order to extend or modify the possible applications for these devices. This often allows re-using old hardware for completely new purposes, thus increasing hardware lifetimes and reducing costs, resource consumption and waste production. Re-programming existing hardware usually requires a thorough knowledge of hardware internals. Sometimes the necessary information is provided by hardware vendors, but for older devices, especially those that are out of production or out of service, it is rather hard to obtain any information, except from some hobbyists' sites spread across the web. The idea of the Programmers Hardware Database is to centrally collect this information, providing links to hardware vendors' documentation or hobbyists' sites whenever available. Based on the Wiki principle that anyone may contribute and edit contents, the Programmers Hardware Database would further provide a platform where hobbyist programmers can present their own hardware / software projects without running their own websites. In addition, programmers of open source operating systems and hardware drivers for these systems would highly profit from a comprehensive database containing information on PC hardware and peripherals, as well as non-PC platforms for their software. Providing a comprehensive directory for hardware information would thus ease various fields of open source software development.

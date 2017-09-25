@@ -303,9 +303,10 @@ The BCM7405 is packaged as a 976 pin, 1 mm, 34 * 34 ball grid array (BGA). See [
 
 ## Links
 
-* http://www.broadcom.com/products/IPTV/IPTV-Solutions/BCM7405
-* http://www.broadcom.com/products/Cable/Cable-Set-Top-Box-Solutions/BCM7405
-* [Product brief](http://www.datasheets.org.uk/indexdl/Datasheet-025/DSA00437494.pdf)
+* [Homepage](http://www.broadcom.com/products/broadband/set-top-box/bcm7405)
 * **bcm97405mbv00\_p10.pdf** / **bcm97405mbv00\_p10.rar** Circuit diagram / pinout
 
+[MIPS]: {{ "/arch/mips" | relative_url }}
+[MIPS]: {{ "/arch/mips" | relative_url }}
+[Broadcom]: {{ "/proc/broadcom" | relative_url }}
 [BCM7405/Pinout]: pinout.html
