@@ -1,13 +1,20 @@
-{% assign names = include.names | split: "§" %}
-{% assign bits = include.bits | split: "§" %}
+{% assign registers = include.registers | split: "§" %}
 {% assign bitcount = 0 %}
 <div class="register" style="grid-template-columns: repeat({{ include.total }}, 1fr)">
-{% for bit in bits %}
+{% for register in registers %}
+{% assign bitname = register | split: "¤" %}
+{% assign bit = bitname[0] %}
+{% assign name = bitname[1] %}
 {% if bit == 1 %}
 	<div class="regbits center" style="grid-column: {{ include.total | minus: bitcount }} / span 1; grid-row: 1 / 2">{{ bitcount }}</div>
 {% else %}
-	<div class="regbits left" style="grid-column-start: {{ include.total | minus: bitcount | plus: bit | plus: 1}}; grid-row: 1 / 2">{{ bitcount | plus: bit | minus: 1 }}</div>
+	<div class="regbits left" style="grid-column-start: {{ include.total | minus: bitcount | minus: bit | plus: 1}}; grid-row: 1 / 2">{{ bitcount | plus: bit | minus: 1 }}</div>
 	<div class="regbits right" style="grid-column-end: {{ include.total | minus: bitcount | plus: 1}}; grid-row: 1 / 2">{{ bitcount }}</div>
+{% endif %}
+{% if name == "" %}
+	<div class="regnone" style="grid-column: {{ include.total | minus: bitcount | minus: bit | plus: 1}} / {{ include.total | minus: bitcount | plus: 1}}; grid-row: 2 / 3"></div>
+{% else %}
+	<div class="regname" style="grid-column: {{ include.total | minus: bitcount | minus: bit | plus: 1}} / {{ include.total | minus: bitcount | plus: 1}}; grid-row: 2 / 3">{{ name }}</div>
 {% endif %}
 {% assign bitcount = bitcount | plus: bit %}
 {% endfor %}

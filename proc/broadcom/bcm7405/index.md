@@ -243,7 +243,7 @@ Since the MIPS architecture allows direct memory access to 32 bit aligned memory
 
 0x10404000 contains a CPU model ID and a revision ID:
 
-{% include register.html total=32 bits="16§16" names="Revision ID§BCD coded CPU model" %}
+{% include register.html total=32 registers="16¤Revision ID§16¤BCD coded CPU model" %}
 
 The upper 16 bits contain 0x7405 for the BCM7405 and 0x7413 for the BCM7413.
 
