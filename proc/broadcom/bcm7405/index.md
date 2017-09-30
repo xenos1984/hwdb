@@ -242,13 +242,9 @@ Since the MIPS architecture allows direct memory access to 32 bit aligned memory
     0x10404408 : Testmode
 
 0x10404000 contains a CPU model ID and a revision ID:
-{{Register32
-|width=320px
-|offset0=0
-|name0=Revision ID
-|offset1=16
-|name1=BCD coded CPU model
-}}
+
+{% include register.html total=32 bits="16§16" names="Revision ID§BCD coded CPU model" %}
+
 The upper 16 bits contain 0x7405 for the BCM7405 and 0x7413 for the BCM7413.
 
 ### USB

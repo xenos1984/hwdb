@@ -1,0 +1,14 @@
+{% assign names = include.names | split: "§" %}
+{% assign bits = include.bits | split: "§" %}
+{% assign bitcount = 0 %}
+<div class="register" style="grid-template-columns: repeat({{ include.total }}, 1fr)">
+{% for bit in bits %}
+{% if bit == 1 %}
+	<div class="regbits center" style="grid-column: {{ include.total | minus: bitcount }} / span 1; grid-row: 1 / 2">{{ bitcount }}</div>
+{% else %}
+	<div class="regbits left" style="grid-column-start: {{ include.total | minus: bitcount | plus: bit | plus: 1}}; grid-row: 1 / 2">{{ bitcount | plus: bit | minus: 1 }}</div>
+	<div class="regbits right" style="grid-column-end: {{ include.total | minus: bitcount | plus: 1}}; grid-row: 1 / 2">{{ bitcount }}</div>
+{% endif %}
+{% assign bitcount = bitcount | plus: bit %}
+{% endfor %}
+</div>
